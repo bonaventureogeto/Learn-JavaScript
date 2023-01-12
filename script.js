@@ -1,4 +1,5 @@
-console.log("Hello, World!")
+console.log("Welcome to this JavaScript course!") // this prints a message
+
 
 // this is a single line comment
 
@@ -7,13 +8,16 @@ console.log("Hello, World!")
     - see!
 */
 
+
 // arithmetic operators in JS
+
 console.log(3 + 5) //addition
 console.log(3 - 5) //subtraction
 console.log(3 * 5) // multiplication
 console.log(3 / 5) // division
 console.log(11 % 5) // modulus
-console.log(3 ** 2) // exponentiation
+console.log(3 ** 10) // exponentiation
+
 
 // variables in JS
 /*
@@ -22,28 +26,37 @@ console.log(3 ** 2) // exponentiation
     3. var 
 */
 
-// const num = 30;
+const num = 30;
 
-// console.log(num)
+console.log(num)
 
-// console.log(age)
+var age = 56;
 
-// var age = 47;
-
-// console.log(age)
+console.log(age)
 
 
-// console.log(cars)
+let cars = "Mazda";
 
-// let cars = 20;
-
-// console.log(cars)
+console.log(cars)
 
 
 /* conditionals 
     - if/else
     - if/else if
 */
+
+let amount = 50;
+let min_amount = 50;
+
+if (amount > 50) {
+    console.log("You can withdraw amount")
+} else if (amount == min_amount) {
+    console.log("You only have 50 in your account")
+} else {
+    console.log("You have insufficient funds and can't withdraw")
+}
+
+
 
 let age = 13;
 
@@ -53,12 +66,12 @@ if (age > 18 || age < 18) {
     console.log("You can't vote")
 }
 
-// object
+// // object
 
-var cars = {
-    lambogini: 34,
-    bmw: 37,
-    toyota: 4
-}
+// var cars = {
+//     lambogini: 34,
+//     bmw: 37,
+//     toyota: 4
+// }
 
-console.log(cars.bmw)
+// console.log(cars.bmw)

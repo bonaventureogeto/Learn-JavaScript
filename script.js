@@ -89,12 +89,12 @@
 
 // while loop
 
-let i = 0;
+// let i = 0;
 
-while (i < 11) {
-    console.log("The number is " + i);
-    i++; // same as i = i + 1
-}
+// while (i < 11) {
+//     console.log("The number is " + i);
+//     i++; // same as i = i + 1
+// }
 
 // for loop & break vs continue
 
@@ -106,3 +106,11 @@ while (i < 11) {
 
 //     console.log("The number is " + i)
 // }
+
+function add(a, b) {
+    return a + b;
+}
+
+let answer = add(20, 80)
+
+console.log(answer)

@@ -45,67 +45,67 @@
     - if/else if
 */
 
-// let amount = 50;
-// let min_amount = 50;
+let amount = 50;
+let min_amount = 50;
 
-// let car = "Tesla";
-
-
-// if (amount > 50) {
-//     console.log("You can withdraw amount")
-// } else if (amount == min_amount) {
-//     console.log(car)
-//     console.log("You only have 50 in your account")
-// } else {
-//     console.log("You have insufficient funds and can't withdraw")
-// }
+let car = "Tesla";
 
 
+if (amount > 50) {
+    console.log("You can withdraw amount")
+} else if (amount == min_amount) {
+    console.log(car)
+    console.log("You only have 50 in your account")
+} else {
+    console.log("You have insufficient funds and can't withdraw")
+}
 
-// let age = 13;
 
-// if (age > 18 || age < 18) {
-//     console.log("You can vote")
-// } else {
-//     console.log("You can't vote")
-// }
+
+let age = 13;
+
+if (age > 18 || age < 18) {
+    console.log("You can vote")
+} else {
+    console.log("You can't vote")
+}
 
 // // object
 
-// var cars = {
-//     lambogini: 34,
-//     bmw: 37,
-//     toyota: 4,
-//     Tesla: "ModelS",
-//     VW: "Sedan",
-//     bugatti: 23
-// }
+var cars = {
+    lambogini: 34,
+    bmw: 37,
+    toyota: 4,
+    Tesla: "ModelS",
+    VW: "Sedan",
+    bugatti: 23
+}
 
-// // for--in loop
+// for--in loop
 
-// for (var key in cars) {
-//     console.log(key)
-// }
+for (var key in cars) {
+    console.log(key)
+}
 
 // while loop
 
-// let i = 0;
+let k = 0;
 
-// while (i < 11) {
-//     console.log("The number is " + i);
-//     i++; // same as i = i + 1
-// }
+while (k < 11) {
+    console.log("The number is " + k);
+    k++; // same as i = i + 1
+}
 
 // for loop & break vs continue
 
-// for (var i = 0; i < 11; i++) {
+for (var i = 0; i < 11; i++) {
 
-//     if (i == 8) {
-//         continue;
-//     }
+    if (i == 8) {
+        continue;
+    }
 
-//     console.log("The number is " + i)
-// }
+    console.log("The number is " + i)
+}
 
 function add(a, b) {
     return a + b;

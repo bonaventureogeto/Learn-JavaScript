@@ -1,11 +1,13 @@
 // content for week 2
 
-// let person = {
-//     name: "John",
-//     age: 34,
-//     gender: "male",
-//     occupation: "Teacher"
-// }
+let person = {
+    name: "John",
+    age: 34,
+    gender: "male",
+    occupation: "Teacher"
+}
+
+// console.log(person.length)
 
 // for (let key in person) {
 //     console.log(key)

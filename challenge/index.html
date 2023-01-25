@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div id="task-list">
+      <div class="task">
+        <h3 class="task-title"></h3>
+        <p class="task-description"></p>
+        <p class="task-status"></p>
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+    <form id="add-task-form">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" />
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea>
+      <label for="status">Status:</label>
+      <select id="status" name="status">
+        <option value="not-completed">Not Completed</option>
+        <option value="completed">Completed</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

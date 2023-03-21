@@ -56,3 +56,34 @@ console.log(account.getBalance())
 account.withdraw(1380)
 
 console.log(account.getBalance())
+
+// class in JavaScript
+class Person1 {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    walk() {
+        console.log(this.name + ' is walking');
+    }
+
+    eat() {
+        console.log(this.name + ' is eating');
+    }
+
+    sleep() {
+        console.log(this.name + ' is sleeping');
+    }
+
+    howOld(){
+        console.log(this.name + ' is ' + this.age + ' years old');
+    }
+
+}
+
+let thePerson = new Person1('John', 20);
+thePerson.walk();
+thePerson.eat();
+thePerson.sleep();
+thePerson.howOld();

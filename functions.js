@@ -43,3 +43,5 @@ Function that is executed immediately after it is created
     }
   }
 })();
+
+// (function)(); // this is how you call an IIFE

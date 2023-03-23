@@ -6,7 +6,7 @@ const imageCard = document.querySelector(".product-image");
 
 const feedbackBtn = document.querySelector(".feedback");
 
-const grayColor = document.getElementsByClassName("gray");
+const grayColor = document.getElementsByClassName("gray")[0];
 
 const cartButton = document.getElementById("button");
 
@@ -18,3 +18,14 @@ redColor.addEventListener("click", function(){
     imageCard.style.backgroundImage = 'url("benz-3.webp")';
 });
 
+grayColor.addEventListener("click", function(){
+    cartButton.style.backgroundColor = "gray";
+    itemTag.style.backgroundColor = "gray";
+    imageCard.style.backgroundImage = 'url("benz-2.jpg")';
+});
+
+blackColor.addEventListener("click", function(){
+    cartButton.style.backgroundColor = "black";
+    itemTag.style.backgroundColor = "black";
+    imageCard.style.backgroundImage = 'url("benz-4.jpg")';
+});

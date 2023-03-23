@@ -1,6 +1,14 @@
-let button = document.getElementsByTagName('button')[0];
+const redColor = document.querySelector(".red");
 
-button.onclick = function(){
-    // alert("Hey there! Be Kind!")
-    console.log("Hey there! Be Kind!")
-}
+const blackColor = document.querySelector(".black");
+
+const imageCard = document.querySelector(".product-image");
+
+const feedbackBtn = document.querySelector(".feedback");
+
+const grayColor = document.getElementsByClassName("gray");
+
+const cartButton = document.getElementById("button");
+
+const itemTag = document.getElementsByTagName("h3")[0];
+

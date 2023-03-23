@@ -29,3 +29,9 @@ blackColor.addEventListener("click", function(){
     itemTag.style.backgroundColor = "black";
     imageCard.style.backgroundImage = 'url("benz-4.jpg")';
 });
+
+cartButton.addEventListener("click", function(){
+    cartButton.style.display = "none";
+    feedbackBtn.style.display = "block";
+    alert("Are you sure your bank account is ready for this?")
+});

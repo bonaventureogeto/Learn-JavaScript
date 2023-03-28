@@ -51,3 +51,19 @@ arr.map(e => setTimeout(() => console.log('async item', e), 0)) // This is an as
 console.log('the stuff')
 
 // setTimeout(function, time-in-milliseconds)
+
+
+// promises
+import fetch from "node-fetch"
+
+const fetchJokeWithPromises = () => {
+    console.log('fetching with promises...')
+
+    fetch('https://api.chucknorris.io/jokes/random')
+        .then(res => res.json())
+        .then(res => console.log('res', res))
+        .catch(error => console.error('There was an error!', error))
+}
+
+fetchJokeWithPromises()
+

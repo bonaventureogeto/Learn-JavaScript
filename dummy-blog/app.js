@@ -1,19 +1,24 @@
-const blogPost = document.getElementById(blog)
+const blogPost = document.getElementById('blog')
 
-const search = document.getElementById(search)
+const search = document.getElementById('read')
+
 
 search.addEventListener('click', function () {
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then(post => post.json())
         .then(post => {
-            const title = post.title;
-            const body = post.body;
-            blogPost.innerHTML = `
-                <h2>${title}</h2>
-                <p>${body}</p>
-            `;
+            for (let i = 0; i < post.length; i++){
+                const title = post[i].title;
+                const body = post[i].body;
+                blogPost.innerHTML = `
+                    <h2>${title}</h2>
+                    <p>${body}</p>
+                `;
+            }
+            // console.log(post[1])
         })
         .catch(error => {
-			weather1.innerHTML = `<p>Error: ${error}</p>`;
+			blogPost.innerHTML = `<p>Error: ${error}</p>`;
 		});
 });
+

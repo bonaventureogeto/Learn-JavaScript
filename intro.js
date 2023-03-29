@@ -113,3 +113,7 @@ console.log(kenya.continent);
 console.log(kenya.region);
 console.log(kenya.culture);
 console.log(kenya.motto());
+
+import greet from './functions.js'
+
+console.log(greet());

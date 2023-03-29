@@ -54,16 +54,18 @@ console.log('the stuff')
 
 
 // promises
-import fetch from "node-fetch"
+// import fetch from "node-fetch"
 
-const fetchJokeWithPromises = () => {
-    console.log('fetching with promises...')
+// const fetchJokeWithPromises = () => {
+//     console.log('fetching with promises...')
 
-    fetch('https://api.chucknorris.io/jokes/random')
-        .then(res => res.json())
-        .then(res => console.log('res', res))
-        .catch(error => console.error('There was an error!', error))
-}
+//     fetch('https://api.chucknorris.io/jokes/random')
+//         .then(res => res.json())
+//         .then(res => console.log('res', res))
+//         .catch(error => console.error('There was an error!', error))
+// }
 
-fetchJokeWithPromises()
+// fetchJokeWithPromises()
+
+// console.log(error)
 

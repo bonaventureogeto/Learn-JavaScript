@@ -1,6 +1,6 @@
 const myLocation = document.getElementById('location');
 const search = document.getElementById('search');
-const weather1 = document.getElementById('weather');
+const weatherData = document.getElementById('weather');
 const API_KEY = '515366407936f5cc978258aaf52980fc';
 
 // To add a search box to the weather application
@@ -10,11 +10,11 @@ search.addEventListener('click', function () {
 		.then(data => {
 			const locationCoordinates = data.coord;
 			const currentWeather = data.weather[0].description;
-			const currentTemp = Math.round(data.main.feels_like - 273.15);
+			const currentTemp = Math.round(data.main.temp - 273.15);
 			const currentPressue = data.main.pressure;
 			const currentHumidity = data.main.humidity;
 			const currentWind = data.wind.speed;
-			weather1.innerHTML = `
+			weatherData.innerHTML = `
 				<h2>Location: ${myLocation.value}</h2>
 				<p>Current weather: ${currentWeather}</p>
 				<p>Current temperature: ${currentTemp}°C</p>
@@ -24,7 +24,7 @@ search.addEventListener('click', function () {
 			`;
 		})
 		.catch(error => {
-			weather1.innerHTML = `<p>Error: ${error}</p>`;
+			weatherData.innerHTML = `<p>Error: ${error}</p>`;
 		});
 });
 

@@ -1,7 +1,7 @@
 const myLocation = document.getElementById('location');
 const search = document.getElementById('search');
 const weatherData = document.getElementById('weather');
-const API_KEY = '515366407936f5cc978258aaf52980fc';
+const API_KEY = 'YOUR-API-KEY';
 
 // To add a search box to the weather application
 search.addEventListener('click', function () {

@@ -1,0 +1,45 @@
+* {
+    background-color: aqua;
+    font-size: 30px;
+}
+
+p {
+    color: darkorange;
+}
+
+h2 {
+    background-color: aliceblue;
+}
+
+button {
+    background-color: red;
+}
+
+#login {
+    border-radius: 20px;
+    font-size: larger;
+}
+
+#page-2 {
+    text-align: center;
+    color: red;
+}
+
+.title {
+    font-size: 40px;
+    color: blue;
+}
+
+#apply-btn {
+    border-radius: 20px;
+}
+
+#join {
+    background-color: darkblue;
+    color: white;
+}
+
+.main-paragraph {
+    text-decoration: underline;
+}
+

@@ -1,4 +1,4 @@
-// console.log("Hello, World!") //first program
+console.log("Hello, World!") //first program
 // //prints
 // console.log("12345 + 12345") // string
 

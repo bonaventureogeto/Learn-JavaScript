@@ -15,6 +15,13 @@ console.log(name);
 
 const age = 20; // cannot be reassigned - immutable - constant
 
-age = 30; // TypeError: Assignment to constant variable.
+// age = 30; // TypeError: Assignment to constant variable.
 
 console.log(age);
+
+let marks1 = 700;
+let marks2 = 800;
+
+let totalMark = marks1 + marks2;
+
+console.log(totalMark);

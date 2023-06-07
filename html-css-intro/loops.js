@@ -19,18 +19,29 @@
 
 // break and continue statements/keywords
 
-for (let i = 1; i <= 100; i++) {
-    if (i === 50) {
-        continue;
-    }
-    console.log(i);
-}
+// for (let i = 1; i <= 100; i++) {
+//     if (i === 50) {
+//         continue;
+//     }
+//     console.log(i);
+// }
 
 // while loops
 
-// let i = 1;
+let i = 1;
 
-// while (i <= 100) {
-//     console.log(i);
-//     i++;
+while (i <= 100) {
+    console.log(i);
+    i++;
+}
+
+// numbers divisible by 3 or 5
+// for (let i = 0; i <= 100; i++){
+//     if (i % 3 === 0) {
+//         console.log(i + " is divisible by 3");
+//     } else if (i % 5 === 0) {
+//         console.log(i + " is divisible by 5");
+//     } else {
+//         console.log(i + " is not divisible by 3 or 5");
+//     }
 // }

@@ -45,10 +45,28 @@
 
 // challenge: write a program to check if a number is divisible by 3 or not
 
-let number = 999;
+// let number = 999;
 
-if (number % 3 === 0) {
-    console.log(number + " is divisible by 3");
+// if (number % 3 === 0) {
+//     console.log(number + " is divisible by 3");
+// } else {
+//     console.log(number + " is not divisible by 3");
+// }
+
+let student_name = "Chris";
+
+let points = 2600;
+
+if (points >= 2000 && points <= 2500) {
+    console.log(student_name + " has an A")
+} else if (points >= 1800 && points < 2000) {
+    console.log(student_name + " has a B")
+} else if (points >= 1500 && points < 1800) {
+    console.log(student_name + " has a C")
+} else if (points >= 1200 && points < 1500) {
+    console.log(student_name + " has a D")
+} else if (points > 0 && points < 1200) {
+    console.log(student_name + " has an E")
 } else {
-    console.log(number + " is not divisible by 3");
+    console.log("Invalid points")
 }

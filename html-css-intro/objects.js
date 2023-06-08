@@ -18,3 +18,18 @@ let person = {
 
 // acessing object properties
 console.log(person.greetings());
+
+// weather object
+let weather = {
+  temperature: 32,
+  humidity: 80,
+  windSpeed: 20,
+  windDirection: "North",
+  precipitation: "Rain",
+  forecast: function () {
+    return("The weather today is " + this.precipitation + "y with a temperature of " + this.temperature + " degrees celcius.");
+  },
+  temperatureConverter: function () {
+    return(this.temperature * 9 / 5 + 32);
+  }
+}

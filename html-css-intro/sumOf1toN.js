@@ -12,15 +12,14 @@
         4. You can assume that the input n will be a positive integer.
 */
 
-function sumOf1toN(n) { 
-
-    let sum = 0;
+function sumOf1toN(n) {
+    let sum = (n+1)/2;
     for (let i = 1; i < n; i++){
-        if (i % 3 === 0 || i % 5 === 0)
+        if (i % 3 === 0 || i % 5 === 0) {
             sum = sum + i;
+        }
     }
     console.log(sum);
 }
 
-sumOf1toN(2000);
-
+sumOf1toN(15);

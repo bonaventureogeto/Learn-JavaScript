@@ -1,25 +1,20 @@
+// objects
+
 let person = {
-  name: "Jane Doe",
-  age: 25,
-  occupation: "Software Developer",
-  citizenship: "Kenyan",
-  greetings: function () {
-    return("Hello Stanger!");
-  },
+  name: "John",
+  age: 32,
+  occupation: "Software Engineer",
+  status: "Married",
   family: {
-    father: "John Doe",
-    mother: "Mary Doe",
-    brother: "James Doe",
-    sister: "Joy Doe",
+    wife: "Jane",
+    son: "John Jr.",
+    daughter: "Jenny"
   },
-  thanks: function () {
-    return("Thank you for visiting my profile!");
-  },
-};
+  greetings: function () {
+    return("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+  }
+}
 
-// Accessing object properties
 
-console.log(person.occupation);
-console.log(person.thanks());
-
-console.log(person.family.sister);
+// acessing object properties
+console.log(person.greetings());

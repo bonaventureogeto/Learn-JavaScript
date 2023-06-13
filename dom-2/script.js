@@ -14,6 +14,7 @@ const cartButton = document.getElementById("button");
 
 const itemTag = document.getElementsByTagName("h3")[0];
 
+
 redColor.addEventListener("click", () => {
     cartButton.style.backgroundColor = "red";
     itemTag.style.backgroundColor = "red";

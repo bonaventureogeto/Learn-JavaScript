@@ -50,7 +50,7 @@ body {
 }
 
 .product-description {
-  background-color: #62c256;
+  background-color: #58ae4d;
   color: #fff;
   padding-left: 20px;
   margin-top: -67px;
@@ -67,7 +67,7 @@ body {
 }
 
 .stars {
-  color: yellow;
+  color: rgb(113, 113, 61);
   font-size: 1em;
 }
 

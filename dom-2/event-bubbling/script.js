@@ -12,6 +12,6 @@ inner.addEventListener('click', () => {
 
 btn.addEventListener('click', (event) => {
     alert('button clicked');
-    
+
     event.stopPropagation();
 });

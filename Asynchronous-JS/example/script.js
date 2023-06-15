@@ -1,15 +1,16 @@
 function fetchData(callback) {
     setTimeout(() => {
-        callback("peanut butter");
-    }, 1000);
+        callback('peanut butter');
+    }, 3000);
 }
 
-fetchData((data) => {
-    console.log(data);
+fetchData(function (message) {
+    console.log(message);
 });
 
-// callback hell
+console.log('Data is being fetched...');
 
+// callback hell
 // getData(function (a) {
 //   getMoreData(a, function (b) {
 //     getEvenMoreData(b, function (c) {
@@ -25,8 +26,8 @@ fetchData((data) => {
 // Promise
 const myPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve("Hello from the promise!");
-    }, 2000);
+        resolve('peanut butter');
+    }, 3000);
 });
 
 console.log(myPromise);

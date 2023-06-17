@@ -7,8 +7,8 @@ function Person(name, age) {
 
 let p1 = new Person('John', 20);
 let p2 = new Person('Jane', 21);
-console.log(p1);
-console.log(p2);
+// console.log(p1);
+// console.log(p2);
 
 //prototype
 Person.prototype = {
@@ -19,7 +19,7 @@ Person.prototype = {
     }
 }
 let p3 = new Person('John', 20, 20);
-console.log(Person.prototype);
+// console.log(Person.prototype);
 
 
 // Encapsulation in JavaScript
@@ -47,21 +47,31 @@ console.log(Person.prototype);
 
 let account = new BankAccount(10000)
 
-console.log(account.getBalance())
+// console.log(account.getBalance())
 
 account.deposit(99999)
 
-console.log(account.getBalance())
+// console.log(account.getBalance())
 
 account.withdraw(1380)
 
-console.log(account.getBalance())
+// console.log(account.getBalance())
 
 // class in JavaScript
+
+let people = []
 class Person1 {
     constructor(name, age) {
         this.name = name;
         this.age = age;
+    }
+
+    addPerson() {
+        let person = {
+            name: this.name,
+            age: this.age
+        }
+        people.push(person);
     }
 
     walk() {
@@ -83,7 +93,19 @@ class Person1 {
 }
 
 let thePerson = new Person1('John', 20);
-thePerson.walk();
-thePerson.eat();
-thePerson.sleep();
-thePerson.howOld();
+let thePerson1 = new Person1("Jane", 200);
+let thePerson2 = new Person1("Jack", 2);
+let thePerson3 = new Person1("Janice", 12);
+let thePerson4 = new Person1("Joker", 23);
+let thePerson5 = new Person1("Joker", 23);
+thePerson.addPerson();
+thePerson1.addPerson();
+thePerson2.addPerson();
+thePerson3.addPerson();
+thePerson4.addPerson();
+thePerson5.addPerson();
+console.log(people);
+// thePerson.walk();
+// thePerson.eat();
+// thePerson.sleep();
+// thePerson.howOld();

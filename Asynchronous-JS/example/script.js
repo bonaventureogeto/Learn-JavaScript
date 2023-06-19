@@ -42,7 +42,9 @@ myPromise.then((result) => {
         console.log('finally');
     });
 
-fetch("https://api.github.com/users/bonaventureogeto")
+// fetch API
+
+fetch("https://fakestoreapi.com/products/1")
     .then((response) => response.json())
     .then((data) => {
         try {

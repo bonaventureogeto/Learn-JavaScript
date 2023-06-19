@@ -42,3 +42,18 @@ myPromise.then((result) => {
         console.log('finally');
     });
 
+fetch("https://api.github.com/users/bonaventureogeto")
+    .then((response) => response.json())
+    .then((data) => {
+        try {
+            console.log(data);
+        } catch (error) {
+            console.log(error);
+        }
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+    // async await

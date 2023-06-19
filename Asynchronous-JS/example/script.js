@@ -1,14 +1,14 @@
-function fetchData(callback) {
-    setTimeout(() => {
-        callback('peanut butter');
-    }, 3000);
-}
+// function fetchData(callback) {
+//     setTimeout(() => {
+//         callback('peanut butter');
+//     }, 3000);
+// }
 
-fetchData(function (message) {
-    console.log(message);
-});
+// fetchData(function (message) {
+//     console.log(message);
+// });
 
-console.log('Data is being fetched...');
+// console.log('Data is being fetched...');
 
 // callback hell
 // getData(function (a) {
@@ -27,7 +27,18 @@ console.log('Data is being fetched...');
 const myPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('peanut butter');
-    }, 3000);
+    }, 300);
 });
 
-console.log(myPromise);
+// console.log(myPromise);
+
+myPromise.then((result) => {
+    console.log(result);
+})
+    .catch((error) => {
+        console.log(error);
+    })
+    .finally(() => {
+        console.log('finally');
+    });
+

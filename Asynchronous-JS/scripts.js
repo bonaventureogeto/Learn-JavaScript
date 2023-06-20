@@ -21,14 +21,14 @@ function getRecipe() {
       (id) => {
         const recipe = {
           title: "Fresh Tomato Pasta",
-          publisher: "Bnaventure",
+          publisher: "Bonaventure",
         };
         console.log(`${id}: ${recipe.title}`);
         setTimeout(
           (publisher) => {
             const recipe2 = {
               title: "Italian Pizza",
-              publisher: "Bnaventure",
+              publisher: "Bonaventure",
             };
             console.log(recipe);
           },

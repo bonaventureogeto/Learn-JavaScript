@@ -44,35 +44,55 @@ const myPromise = new Promise((resolve, reject) => {
 
 // fetch API
 
-fetch("https://fakestoreapi.com/products/1")
-    .then((response) => response.json())
-    .then((data) => {
-        try {
-            console.log(data);
-        } catch (error) {
-            console.log(error);
-        }
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+// fetch("https://api.github.com/users/bonaventureogeto")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     try {
+//       console.log(data);
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
 
-// let promise1 = fetch("https://jsonplaceholder.typicode.com/posts/1");
-// let promise2 = fetch("https://jsonplaceholder.typicode.com/posts/2");
-// let promise3 = fetch("https://jsonplaceholder.typicode.com/posts/3");
+// let promise1 = fetch("https://api.github.com/users/bonaventureogeto");
+// let promise2 = fetch("https://api.github.com/users/brad");
+// let promise3 = fetch("https://api.github.com/users/john");
 
 // Promise.all([promise1, promise2, promise3])
-//     .then((responses) => {
-//         console.log(responses);
+//     .then((response) => {
+//         console.log(response);
 //     })
+
 
 // async await
     
-async function getData() {
-    const response = await fetch("https://api.github.com/users/bonaventureogeto");
-    const data = await response.json();
-    console.log(data);
+// async function getData() {
+//     const response = await fetch("https://api.github.com/users/bonaventureogeto");
+//     const data = await response.json();
+//     console.log(data);
+// }
+
+// getData();
+
+
+function students() {
+    return("Hello, I'm a student at Zindua!")
 }
 
-getData();
+function occupation() {
+    return("I'm a Software Developer")
+}
+
+async function personInfo() {
+    const student = await students();
+    console.log(student);
+
+    const career = await occupation();
+    console.log(career)
+}
+
+personInfo();

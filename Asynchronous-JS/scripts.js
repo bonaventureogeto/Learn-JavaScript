@@ -87,7 +87,7 @@ async function getRecipeAw() {
   console.log(IDs);
   const recipe = await getRecipe[2];
   console.log(recipe);
-  const related = await getRelated("Binaventure Ogeto");
+  const related = await getRelated("Bonaventure Ogeto");
   console.log(related);
 
   return recipe;

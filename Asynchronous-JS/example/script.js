@@ -44,7 +44,7 @@ myPromise.then((result) => {
 
 // fetch API
 
-fetch("https://fakestoreapi.com/products/1")
+fetch("https://fakestoreapi.com/products")
     .then((response) => response.json())
     .then((data) => {
         try {
@@ -57,5 +57,14 @@ fetch("https://fakestoreapi.com/products/1")
         console.log(error);
     });
 
+
+let promise1 = fetch("https://jsonplaceholder.typicode.com/posts/1");
+let promise2 = fetch("https://jsonplaceholder.typicode.com/posts/2");
+let promise3 = fetch("https://jsonplaceholder.typicode.com/posts/3");
+
+Promise.all([promise1, promise2, promise3])
+    .then((responses) => {
+        console.log(responses);
+    })
 
     // async await

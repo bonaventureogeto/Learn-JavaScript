@@ -44,18 +44,43 @@ const myPromise = new Promise((resolve, reject) => {
 
 // fetch API
 
-// fetch("https://api.github.com/users/bonaventureogeto")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     try {
-//       console.log(data);
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
+const urls = [
+    "https://api.github.com/users/bonaventureogeto",
+    "https://api.github.com/users/brad",
+    "https://api.github.com/users/john"
+]
+
+
+function fetchAndDisplay(urls) {
+    urls.map((url) => fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+            try {
+                console.log(data);
+            } catch (error) {
+                console.log(error);
+            }
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+)}
+
+fetchAndDisplay(urls);
+
+
+fetch("https://api.github.com/users/bonaventureogeto")
+  .then((response) => response.json())
+  .then((data) => {
+    try {
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 
 // let promise1 = fetch("https://api.github.com/users/bonaventureogeto");

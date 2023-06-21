@@ -51,22 +51,22 @@ const urls = [
 ]
 
 
-function fetchAndDisplay(urls) {
-    urls.map((url) => fetch(url)
-        .then((response) => response.json())
-        .then((data) => {
-            try {
-                console.log(data);
-            } catch (error) {
-                console.log(error);
-            }
-        })
-        .catch((error) => {
-            console.log(error);
-        })
-)}
+// function fetchAndDisplay(urls) {
+//     urls.map((url) => fetch(url)
+//         .then((response) => response.json())
+//         .then((data) => {
+//             try {
+//                 console.log(data);
+//             } catch (error) {
+//                 console.log(error);
+//             }
+//         })
+//         .catch((error) => {
+//             console.log(error);
+//         })
+// )}
 
-fetchAndDisplay(urls);
+// fetchAndDisplay(urls);
 
 
 fetch("https://api.github.com/users/bonaventureogeto")
@@ -94,14 +94,18 @@ fetch("https://api.github.com/users/bonaventureogeto")
 
 
 // async await
-    
-// async function getData() {
-//     const response = await fetch("https://api.github.com/users/bonaventureogeto");
-//     const data = await response.json();
-//     console.log(data);
-// }
 
-// getData();
+async function getData() {
+    const response = await fetch("https://api.github.com/users/bonaventureogeto");
+    const data = await response.json();
+    try {
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+getData();
 
 
 function students() {

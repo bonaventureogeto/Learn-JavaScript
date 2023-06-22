@@ -1,21 +1,40 @@
-// const user1 = {
-//   firstname: "John",
-//   lastname: "Doe",
-//   address: "15 Avenue Westlands",
-//     age: 43,
-//     family: {
-//         father: "John Doe Sr",
-//         mother: "Jane Doe",
-//         sisters: {
-//             sister1: "Jane Doe Jr",
-//             sister2: "Janet Doe"
-//         }
-//   }
-// };
+const user1 = {
+  firstname: "John",
+  lastname: "Doe",
+  address: "15 Avenue Westlands",
+    age: 43,
+    family: {
+        father: "John Doe Sr",
+        mother: "Jane Doe",
+        sisters: {
+            sister1: "Jane Doe Jr",
+            sister2: "Janet Doe"
+        }
+  }
+};
 
-// const { firstname, lastname, fullname =
-//   `${firstname} ${lastname}`, address, age, salary = 345345,
-//   family: { sisters: { sister1, sister2 } } } = user1;
+// const { firstname, lastname } = user1;
+
+// console.log(firstname, lastname); // John Doe
+
+// const { firstname,
+//   lastname,
+//   fullname =
+//   `${firstname} ${lastname}`,
+//   address,
+//   age,
+//   salary = 345345,
+//   family:
+//   {
+//     sisters:
+//     {
+//       sister1,
+//       sister2
+//     }
+//   }
+// } = user1;
+
+// console.log(salary)
 
 // console.log(fullname, address, age, salary); // John 15 Avenue Westlands 43 345345
 
@@ -36,7 +55,7 @@ const user = {
 };
 
 function logDetails({ name, age }) {
-  // console.log(`${name} is ${age} years old.`);
+  console.log(`${name} is ${age} years old.`);
 }
 
 logDetails(user); // Alex is 43 years old.
@@ -74,33 +93,34 @@ const users = [
   },
 ];
 
-for(const { name, address } of users) {
-  // console.log(`${name} lives in ${address}.`);
+for(let { name, address } of users) {
+  console.log(`${name} lives in ${address}.`);
 }
 
 // destructuring the console object
 const { log, warn, error } = console;
 
-log("This is a log message.");
-warn("This is a warning message.");
-error("This is an error message.");
+// log("This is a log message.");
+// warn("This is a warning message.");
+// error("This is an error message.");
 
 // Destructuring Arrays
 const arr = [1, 2, 3, 4, 5];
 
 const [first, second, third] = arr;
 
-// console.log(first, second, third); // 1 2 3
+console.log(first, second, third); // 1 2 3
 
 // spread operator
-const clone = { ...user, occupation: "developer", age: 100 };
+const clone = { ...user, occupation: "developer", nationality: "American", name: "John"};
 
-// console.log(clone); // { name: 'Alex', address: '15th Park Avenue', age: 43, occupation: 'developer' }
+console.log(clone); // { name: 'Alex', address: '15th Park Avenue', age: 43, occupation: 'developer' }
 
 const updatedUser = {
   ...user,
   family: {
     ...user.family,
+    mother: "Susan Doe",
     sisters: {
       ...user.family.sisters,
       sister1: "Mary Leakey",
@@ -109,12 +129,12 @@ const updatedUser = {
   }
 };
 
-// console.log(updatedUser)
+console.log(updatedUser)
 
 // Combine (or Merge) two Objects
-const mergedUsers = { ...user, ...users };
+const mergedUsers = { ...user, ...updatedUser };
 
-// console.log(mergedUsers);
+console.log(mergedUsers);
 
 
 // Rest Operator

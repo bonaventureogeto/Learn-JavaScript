@@ -13,6 +13,8 @@ const user1 = {
   }
 };
 
+// console.log(user1.family.sisters.sister1)
+
 // const { firstname, lastname } = user1;
 
 // console.log(firstname, lastname); // John Doe
@@ -24,10 +26,8 @@ const user1 = {
 //   address,
 //   age,
 //   salary = 345345,
-//   family:
-//   {
-//     sisters:
-//     {
+//   family:{
+//     sisters:{
 //       sister1,
 //       sister2
 //     }
@@ -54,11 +54,11 @@ const user = {
   }
 };
 
-function logDetails({ name, age }) {
+function logDetails({ name, age}) {
   console.log(`${name} is ${age} years old.`);
 }
 
-logDetails(user); // Alex is 43 years old.
+// logDetails(user); // Alex is 43 years old.
 
 // Destructure Function Return Value
 const getUser = () => {
@@ -112,9 +112,14 @@ const [first, second, third] = arr;
 console.log(first, second, third); // 1 2 3
 
 // spread operator
-const clone = { ...user, occupation: "developer", nationality: "American", name: "John"};
+const clone = {
+  ...user,
+  occupation: "developer",
+  nationality: "American",
+  name: "John",
+};
 
-console.log(clone); // { name: 'Alex', address: '15th Park Avenue', age: 43, occupation: 'developer' }
+// console.log(clone); // { name: 'Alex', address: '15th Park Avenue', age: 43, occupation: 'developer' }
 
 const updatedUser = {
   ...user,
@@ -124,17 +129,18 @@ const updatedUser = {
     sisters: {
       ...user.family.sisters,
       sister1: "Mary Leakey",
-      sister2: "Janet Jackson"
+      sister2: "Janet Jackson",
+      sister3: "Blue Ivy"
     }
   }
 };
 
-console.log(updatedUser)
+// console.log(updatedUser)
 
 // Combine (or Merge) two Objects
 const mergedUsers = { ...user, ...updatedUser };
 
-console.log(mergedUsers);
+// console.log(mergedUsers);
 
 
 // Rest Operator

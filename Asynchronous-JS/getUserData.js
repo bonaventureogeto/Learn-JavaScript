@@ -31,8 +31,12 @@ function getUserAge() {
 
 async function getAgeAndLog() {
     // Call getUserAge() and log user age to console using async/await syntax
-    let age = await getUserAge();
-    console.log(age);
+    try {
+        let age = await getUserAge();
+        console.log(age);
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 getAgeAndLog();

@@ -1,7 +1,8 @@
 class Car {
-    constructor(make, model) {
+    constructor(make, model, IP) {
         this.make = make;
         this.model = model;
+        this._IP = IP;
     }
 
     drive() {
@@ -10,6 +11,10 @@ class Car {
 
     stop() {
         console.log('Screech!');
+    }
+
+    get_IP() {
+        return this._IP;
     }
 }
 
@@ -24,6 +29,6 @@ class ElectricCar extends Car {
     }
 }
 
-const myElectricCar = new ElectricCar('Tesla', 'Model 3', 310);
+const myElectricCar = new ElectricCar('Tesla', 'Model 3', '634.546.23.6.8.0', 310);
 
-myElectricCar.charge();
+console.log(myElectricCar.get_IP());

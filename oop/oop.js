@@ -10,4 +10,10 @@ console.log(myCar);
 Car.prototype.greeting = function () {
     console.log("Hello, World!")
 }
+
+Car.prototype.drive = function () {
+    console.log("Vroom, Vroom!")
+}
+
 myCar.greeting();
+myCar.drive();

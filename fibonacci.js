@@ -22,5 +22,5 @@ function fibonacci(number) {
 
 }
 
-fibonacci(1000) // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+fibonacci(10000) // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 

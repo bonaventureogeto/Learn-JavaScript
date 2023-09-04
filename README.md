@@ -46,14 +46,20 @@ To get started with these projects, follow these steps:
 
 1. Clone this repository to your local machine:
 
-2. Navigate to the project folder you want to work on:
+   ```
+      git clone https://github.com/bonaventureogeto/learn-javascript.git
+   ```
 
+3. Navigate to the project folder you want to work on:
+   ```
+      cd learn-javascript/<foldername>
+   ```
 
-3. Read the project's `README.md` file for instructions and guidance on the project.
+4. Read the project's `README.md` file for instructions and guidance on the project.
 
-4. Explore the solution provided in the `solutions` folder to understand the implementation.
+5. Explore the solution provided in the `solutions` folder to understand the implementation.
 
-5. Code, experiment, and have fun learning JavaScript!
+6. Code, experiment, and have fun learning JavaScript!
 
 ## Contributing
 
@@ -62,13 +68,19 @@ Contributions to this repository are welcome! If you have additional JavaScript 
 1. Fork this repository.
 
 2. Create a new branch for your feature or bug fix:
-
+```
+   git checkout -b feature/my-new-feature
+```
 
 3. Make your changes and commit them:
-
+```
+   git commit -m "Add my new feature"
+```
 
 4. Push your changes to your forked repository:
-
+```
+   git push origin feature/my-new-feature
+```
 
 5. Open a pull request to this repository with a detailed description of your changes.
 

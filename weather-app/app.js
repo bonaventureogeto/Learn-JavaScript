@@ -1,12 +1,21 @@
+// Purpose: To create a weather application that displays the current weather and a five-day forecast for a location.
+
+// To create a weather application that displays the current weather for a location,
+//make an API call to retrieve the current weather data.
+//The code should display the location, temperature, pressure, humidity, and wind speed.
+
+// import './env';
+
 const myLocation = document.getElementById('location');
 const search = document.getElementById('search');
 const weatherData = document.getElementById('weather');
-const API_KEY = 'YOUR-API-KEY';
+const API_KEY = process.env.YOUR-API-KEY;
 
 // To add a search box to the weather application
 search.addEventListener('click', function () {
 	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${myLocation.value}&appid=${API_KEY}`)
 		.then(data => data.json())
+		console.log(data)
 		.then(data => {
 			const locationCoordinates = data.coord;
 			const currentWeather = data.weather[0].description;

@@ -17,15 +17,21 @@ let name; // variable declaration
 
 name = "Jane Doe"; // variable initialization
 
-// console.log(name);
+console.log(name);
+
+let name1 = "John Doe"; // variable declaration, initialization
+
+console.log(name1);
 
 // mutability - ability to change a variable/value
 
-let num = 390.45; // variable declaration and initialization
-num = 234; // overriding
+let number = 390.45; // variable declaration and initialization
+number = 234; // overriding
 
-console.log(num);
+console.log(number);
 
-const num1 = 456; // const is immutable
+const number1 = 456; // const is immutable
+// number1 = 200; 
 
-console.log(num1);
+console.log(number1);
+

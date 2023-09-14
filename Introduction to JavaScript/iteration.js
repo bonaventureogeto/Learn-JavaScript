@@ -1,13 +1,18 @@
-// for (let i = 1; i <= 10; i++){
-//     console.log("Number ", i);
-// }
+/*
+    for loops - initialization, condition, increment
+*/
 
-// write a for loop that returns even numbers between 1 and 100
+// let number1 = 2;
 
-// for (let i = 1; i <= 100; i++){
-//     if (i % 2 === 1) {
-//         console.log(i);
-//     }
-// }
+// let number2 = "2";
+
+// console.log(number1 === number2);
 
 
+for (let number = 1; number <= 100; number++){
+    if (number % 2 == 0) {
+        console.log(number);
+    }
+}
+
+// write a for loop that prints odd numbers between 1 and 50

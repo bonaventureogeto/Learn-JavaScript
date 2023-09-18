@@ -1,7 +1,14 @@
 // functions in JavaScript
 
-function greet() {
-    return("Hello, Function!");
+// function declaration
+// let a;
+// let b;
+
+function sum(a, b) {  // parameters
+    console.log(a + b);
 }
 
-console.log(greet()); // calling a function
+sum(267, 987); // calling a function with arguments
+
+
+// write a function that returns the multiplication of three numbers

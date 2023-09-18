@@ -28,11 +28,11 @@ let person = {
 }
 
 // accesing values in an object
-console.log(person.family.sisters.sister1); // dot notation
+// console.log(person.family.sisters.sister1); // dot notation
 
-console.log(person.hobbies[0]); // accesing values inside a list/array
+// console.log(person.hobbies[0]); // accesing values inside a list/array
 
-console.log(person["family"]["sisters"]["sister1"]); // using index
+// console.log(person["family"]["sisters"]["sister1"]); // using index
 
 
 // list of objects
@@ -55,14 +55,20 @@ let countries = [
     }
 ]
 
-console.log(countries[0].population);
+// console.log(countries[0].population);
 
 // Write a JavaScript program that takes in an object representing a person1 and 
 // returns a string of their full name.
 
-let person1 = {
-    firstName: "John",
-    lastName: "Doe"
-}
+// let person1 = {
+//     firstName: "John",
+//     lastName: "Doe"
+// }
 
-console.log(person1.firstName + " " + person1.lastName);
+// console.log(person1.firstName + " " + person1.lastName);
+
+let items = ["Tea", "Pizza", "Snartphone", "Book", "Cup", "Car", "20"];
+
+for (key in person) {
+    console.log(person[key]);
+}

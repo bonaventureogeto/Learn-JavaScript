@@ -4,6 +4,12 @@ let names = ["John", "Jade"]; // list - array
 
 // objects in JavaScript - objects are a set of key-value pairs separated by a comma
 
+let Kenya = {
+  continent: "Africa",
+  population: "50M",
+  landmass: "582,646 km²"
+};
+
 let person = {
     name: "Jake",
     age: 20,

@@ -1,4 +1,4 @@
-// Write a JavaScript function that calculates the sum of the first n prime numbers
+// Write a JavaScript function that calculates the sum of the prime numbers between 0 and n
 
 let primes = [];
 

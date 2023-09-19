@@ -27,4 +27,6 @@ function rectangle(length, width) {
 
 rectangle(90, 35);
 
+// console.log(area);
+
 // write a function for calculating the area of a triangle

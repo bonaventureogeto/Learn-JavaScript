@@ -11,5 +11,13 @@ function greet() {
 
 greet();
 
-console.log(name);
-console.log(number ** 4);
+// console.log(name);
+// console.log(number ** 4);
+
+let age = 20;
+    
+if (name === "Jake") {
+    console.log("Jake is " + age + " years old!")
+}
+
+console.log(age);

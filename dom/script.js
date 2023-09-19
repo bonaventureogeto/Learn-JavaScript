@@ -1,6 +1,6 @@
 let title1 = document.createElement("h1"); // creates a new element with the given tag name
 
-title1.textContent = "Africa is a beautiful continent";
+title1.textContent = "Africa is a country";
 document.body.appendChild(title1); // appends the given element to the end of the list of children of the given parent node
 
 
@@ -12,7 +12,7 @@ title.innerHTML = "The most common way to access a DOM element is by its ID attr
 
 let heading = document.getElementsByTagName("h3"); // returns an array-like collection of elements with the given tag name
 
-// heading[0].innerHTML = "The most common way to access a DOM element is by its ID attribute. You can use the document.getElementById() method to get the element with a specific ID:";
+heading[0].innerHTML = "The most common way to access a DOM element is by its ID attribute. You can use the document.getElementById() method to get the element with a specific ID:";
 
 for(let i = 0; i < heading.length; i++) {
   heading[i].innerHTML = "The most common way to access a DOM element is by its ID attribute. You can use the document.getElementById() method to get the element with a specific ID:";
@@ -25,7 +25,7 @@ for(let i = 0; i < something.length; i++) {
 }
 
 
-// something[0].textContent = "You can also access elements by their class name using the document.getElementsByClassName() method. This method returns an array-like collection of elements with the given class name";
+heading[0].textContent = "You can also access elements by their class name using the document.getElementsByClassName() method. This method returns an array-like collection of elements with the given class name";
 
 let button = document.getElementsByTagName("button"); // returns an array-like collection of elements with the given tag name
 
@@ -40,5 +40,3 @@ let myDiv = document.getElementsByClassName("myDiv"); // returns an array-like c
 for (let i = 0; i < myDiv.length; i++) {
   myDiv[i].style.backgroundColor = "green";
 }
-
-

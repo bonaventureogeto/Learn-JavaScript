@@ -24,8 +24,37 @@ for (person in people) {
     }
 }
 
-console.log(peopleInCity);
+// console.log(peopleInCity);
 
 // Create an empty array called `personInCity`.
 // loops through the people array, access the names of people
 // update their names to include the name of the city as their second name
+
+// Calculate the average age of all the people in the `people` array.
+
+// solution 1
+let ages = [];
+
+for (person in people) {
+    ages.push(people[person].age);
+}
+console.log(ages);
+
+let total = 0;
+
+for (age in ages) {
+    total += ages[age];
+}
+let average = total / ages.length;
+
+console.log(average);
+
+// solution 2
+let totalAge = 0;
+
+for (let person of people) {
+  totalAge += person.age;
+}
+
+const averageAge = totalAge / people.length;
+console.log("Average age:", averageAge);

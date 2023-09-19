@@ -10,5 +10,4 @@ function sum(a, b) {  // parameters
 
 sum(267, 987); // calling a function with arguments
 
-
 // write a function that returns the multiplication of three numbers

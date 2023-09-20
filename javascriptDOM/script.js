@@ -6,7 +6,7 @@ const paragraph = document.getElementById("box-1");
 
 const headings = document.querySelector("h2");
 
-const imageCard = document.getElementsByTagName("item-image")[0];
+const imageCard = document.getElementsByClassName("item-image")[0];
 const button = document.getElementsByTagName("button")[0];
 
 /*

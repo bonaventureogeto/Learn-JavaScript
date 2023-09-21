@@ -12,6 +12,11 @@ const first = () => {
 
 first();
 
+let name = "Ken"
+let age = 40
+
+console.log(`My name is ${name} and I am ${age} years old!`);
+
 function getRecipe() {
   setTimeout(() => {
     const recipeID = [23, 454, 56, 67, 343];
@@ -23,7 +28,7 @@ function getRecipe() {
           title: "Fresh Tomato Pasta",
           publisher: "Bonaventure",
         };
-        console.log(`${id}: ${recipe.title}`);
+        console.log(`${id}: ${recipe[title]}`);
         setTimeout(
           (publisher) => {
             const recipe2 = {

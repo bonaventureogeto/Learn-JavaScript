@@ -13,7 +13,6 @@ const myName = document.getElementById('name')
 
 const myAge = document.getElementById('age')
 
-const myTask = document.getElementsByTagName('li')
 
 // console.log(title);
 // console.log(myTitle);

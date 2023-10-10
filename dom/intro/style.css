@@ -1,0 +1,12 @@
+/* CSS STYLES goes here */
+h1 {
+    color: Blue;
+}
+
+.title {
+    background-color: black;
+}
+
+#description {
+    font-size: 20px;
+}

@@ -18,4 +18,4 @@ function transformArray(arr) {
     }
 }
 
-transformArray([2, 4, 5, 8, 98, 0, -34, 67, 793, 46])
+transformArray([2, 4, 5, 8, 98, 0, -34, 67, 793, 46]);
